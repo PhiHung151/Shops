@@ -1,0 +1,21 @@
+<H4 style="margin-top: 10px; width: 100%; text-align: center">TÀI KHOẢN</H4>
+<hr>
+<a href="./account.php"><H5 class="h5-menu-ac">Thông tin tài khoản</H5></a>
+<hr>
+<a href="./changethepassword.php"><H5 class="h5-menu-ac">Thay đổi mật khẩu</H5></a>
+<hr>
+<a href="./addressbook.php"><H5 class="h5-menu-ac">Sổ địa chỉ</H5></a>
+<hr>
+<a href="./cart.php"><H5 class="h5-menu-ac">Giỏ hàng</H5></a>
+<hr>
+<a href="./purchasestatus.php"><H5 class="h5-menu-ac">Đơn hàng của tôi</H5></a>
+<hr>
+<a href="./purchasehistory.php"><H5 class="h5-menu-ac">Lịch sử mua hàng</H5></a>
+<hr>
+<H5 class="logout" onclick="logout()">Đăng xuất</H5>
+<script>
+   function logout(){
+       document.cookie = "login=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+       window.location="./";
+   }
+</script>

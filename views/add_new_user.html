@@ -1,0 +1,29 @@
+
+<div style="padding-left: 15px; padding-top: 10px;">
+    <h4>Thêm người dùng mới</h4>
+    <form method="post" action="#" style="margin-top: -15px">
+        <img src="../upload/img/register1.png" style="height: 150px; width: auto"><br><br>
+        <div style="float: left; width: 120px">Họ tên</div>
+        <input type="text" class="form-control-sm" placeholder="Tên: 'Nguyen Van A'" required name="name"><br><br>
+        <span  style="float: left; width: 120px">Email</span>
+        <input type="email" class="form-control-sm" placeholder="Email" required name="email"><br>
+        <div id="emaill" style="color: #f00; line-height: 14px; margin-bottom: 10px; margin-top: 5px; font-size: 14px; display: none">Email không hợp lệ</div><br>
+        <span  style="float: left; width: 120px">Mật khẩu</span>
+        <input type="password" class="form-control-sm" placeholder="Mật khẩu" required  name="password"><br><br>
+        <span  style="float: left; width: 120px">Xác nhận</span>
+        <input type="password" class="form-control-sm" placeholder="Xác nhận mật khẩu" required name="password2"><br>
+        <div id="passerror" style=" display: none;color: #f00; line-height: 14px; margin-bottom: 10px; margin-top: 5px; font-size: 14px">Mật khẩu không khớp</div><br>
+        <span  style="float: left; width: 120px">Số điện thoại</span>
+        <input type="text"  class="form-control-sm" placeholder="Số điện thoại" required name="phonenumber"><br>
+        <div id="sdt" style=" display: none;color: #f00; line-height: 14px; margin-bottom: 10px; margin-top: 5px; font-size: 14px">Số điện thoại không hợp lệ</div><br>
+        <span  style="float: left; width: 120px">Địa chỉ</span>
+        <input type="text" class="form-control-sm" placeholder="Địa chỉ" name="address"><br><br>
+        <input type="submit" value="THÊM MỚI NGƯỜI DÙNG" class="btn btn-info" >
+    </form>
+
+</div>
+<?php
+        require_once "../controller/Account_Control.php";
+        $temp  =new  Account_Control();
+        $temp -> addUser();
+?>
